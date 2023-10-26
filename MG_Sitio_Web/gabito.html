@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MG Gabito</title>
+        <link rel="stylesheet" type="text/css" href="estilospag1.css">
+        <link rel="stylesheet" href="barraDeNavegación.css">
+    </head>
+    <body>
+        <header class="barra">
+            <div class="logo">
+                <img src="MG.png" alt="MG-logo" >
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="MG_Menu.html"> Regresar </a></li>
+                </ul>
+            </nav>
+        </header>  <br><br><br><br><br><br><label>Gabito Ballesteros</label><br><br><br><br><br><br>
+        <div>
+            <center>
+                <div class="pp_img"></div>
+                        <img src="imagen4.png" alt="Imagen 4" ></div>
+                        </div>
+                        <label>
+                            Gabito Ballesteros tenía solo 10 años cuando se percató de su talento musical. Formó parte de un grupo mariachi infantil en una iglesia local en su natal Cumpas, Sonora, México, donde aprendió a tocar la guitarra y descubrió sus capacidades para el canto.
+                        </label>
+                        <br><br><br>
+                        <form action="procesar_encuesta.php" method="post">
+            <label for="cancion">1. ¿Cuál es tu canción favorita de este artista?</label>
+            <input type="text" id="cancion" name="cancion" required><br><br>
+
+            <label for="gusto">2. ¿Qué tanto te gusta este artista? (Arrastra de 1 a 10)</label>
+            <input type="range" id="gusto" name="gusto" min="1" max="10"><br><br>
+
+            <label for="utilidad">3. ¿Te fue útil esta información?</label>
+            <select id="utilidad" name="utilidad">
+                <option value="Si">Sí</option>
+                <option value="No">No</option>
+            </select><br><br>
+
+            <label for="comentarios">4. Comentarios para esta página:</label>
+            
+    <textarea id="comentarios" name="comentarios" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Enviar Encuesta">
+        </form>
+        <br><br><br><br><br><br><br><br>
+        </center>
+    </body>
+</html>

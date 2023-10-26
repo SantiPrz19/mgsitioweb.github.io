@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Página de Inicio de Sesión</title>
+        <link rel="stylesheet" type="text/css" href="estilospag1.css">
+        <link rel="stylesheet" href="barraDeNavegación.css">
+    </head>
+    <body>
+        <header class="barra">
+            <div class="logo">
+                <img src="MG.png" alt="MG-logo" >
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="MG_Menu.html"> Regresar </a></li>
+                </ul>
+            </nav>
+        </header>  
+        <center><h1>Iniciar Sesión</h1></center>
+        <br>
+        <form id="loginForm">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required><br><br>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required><br>
+            <label>Tu contraseña para acceder es: memoguz</label>
+            <br>
+            <button type="button" id="continuarButton">Continuar</button>
+        </form>
+        
+
+        <p id="mensaje"></p>
+
+        <script>
+            document.getElementById('continuarButton').addEventListener('click', function() {
+                var usuario = document.getElementById('usuario').value;
+                var contrasena = document.getElementById('contrasena').value;
+
+                if (contrasena === 'memoguz') {
+                    // Contraseña correcta, redirige a la página 2
+                    window.location.href = 'MG_Menu.html';
+                } else {
+                    // Contraseña incorrecta, muestra un mensaje de error
+                    document.getElementById('mensaje').textContent = 'Contraseña incorrecta. Por favor, inténtalo de nuevo.';
+                    // Borra la contraseña ingresada
+                    document.getElementById('contrasena').value = '';
+                }
+            });
+        </script>
+        </center>
+    </body>
+</html>
